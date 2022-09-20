@@ -2,35 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cálculo de Velocidade Média</title>
+    <title>Velocidade Média</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
 </head>
 <body>
-    <header>Velocidade Média</header>
-    <nav><p>Home</p><p>Sobre</p></nav>
-    <div class="container">
-        <h2>Cálculo</h2>
-        <input type="number" placeholder="Insira o valor do deslocamento" id="deslocamento">
-        <br>
-        <input type="number" placeholder="Insira a velocidade do tempo" id="velocidade">
-        <br>
-        <button onclick="dividir()" >Limpar</button>
-        <button onclick="apagar()">Calcular</button>
-        <br>
-        <input type="number" placeholder="Resultado"></input>
+    <header>
+        Velocidade Média
+    </header>
+
+    <div class = "menu">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="./html/sobre.html">Sobre</a>
+        </nav>
     </div>
-    <div class="container1">
-        <h2>Resultado</h2>
-        <input type="text" placeholder=""></input>
+    
+    <div class = "calculo">
+        <div class = "titulo">
+            Cálculo
+        </div>
+        <br>
+        <input type="number" placeholder="Informe o valor do deslocamento" id="distancia">
+        <br>
+        <input type="number" placeholder="Informe o intervalo de tempo" id="tempo">
+        <br>
+             <div class = "botoes">
+                <button class="btn2" onclick="excluir()">Limpar</button>
+                <button class="btn1" onclick="velocidademedia()">Calcular</button>
+            </div>
+        <br>
+        <input class="result" type="number" placeholder="" id="vm">
+
     </div>
+
+    <div class = "resultados">
+        <div class = "titulo">
+            Resultados
+        </div>
+        <p class = "final" id="novidades"></p>
+    </div>
+
     <footer>
-        <ul>
-            <li>SENAI SC</li>
-            <li>Curso de Desenvolvimento de Sistemas</li>
-            <li>Lógica de Programa</li>
-            <li>Jaíza Monteiro dos Santos Freire</li>
-        </ul>
+        <li>SENAI SC - CTAI</li>
+        <li>Curso de Desenvolvimento de Sistemas</li>
+        <li>Lógica de Programa</li>
+        <li>Jaíza Monteiro dos Santos Freire</li>
     </footer>
-    <script src="script.js"></script>
+
 </body>
 </html>
